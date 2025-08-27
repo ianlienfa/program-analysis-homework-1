@@ -16,7 +16,7 @@ distribution is broken down inline with this document.
 
 **Alternative 1 (GitHub Codespaces) - Recommended, requires the use of Chrome**
 
-1. Open this repository using **GitHub Codespaces**. A dialogue will say "This folder contains a workspace file ... <snip> ... Do you want to open it?" Click "Open Workspace".  You may receive a warning from the Git extension of too many active changes in the codeql submodule; you can ignore this warning, especially since you won't turn in this git repository.  Remember to commit changes to files you do care about before closing a codespace.
+1. Open this repository using **GitHub Codespaces**. You may receive a warning from the Git extension of too many active changes in the codeql submodule; you can ignore this warning, especially since you won't turn in this git repository.  Remember to commit changes to files you do care about before closing a codespace.
 2. Inside the codespace environment, open the QL Tab on the sidebar of Visual Studio Code and click **"Add a CodeQL database From GitHub"**. In this homework, we will analyze the following two projects:
    https://github.com/CMU-program-analysis/s2-hw1 and
    https://github.com/CMU-program-analysis/mypy-hw1. 
