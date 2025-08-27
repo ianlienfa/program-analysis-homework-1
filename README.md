@@ -32,6 +32,7 @@ distribution is broken down inline with this document.
    https://github.com/CMU-program-analysis/mypy-hw1. We created the CodeQL databases for these projects and included them as zip archives in this repository.
    **You must import these two databases before writing/testing your queries**. 
 5. In the QL Tab, set *s2-hw1* as the default database to answer the questions for the Java analysis and *mypy-hw1* for the Python analysis.
+6. You may need to download Java and Python CodeQL dependencies. In the Command Palette, type "Code QL: Install Pack Dependencies", and select `queries-java` and `queries-python`.
 
 ---
 
