@@ -17,24 +17,21 @@ distribution is broken down inline with this document.
 **Alternative 1 (GitHub Codespaces) - Recommended, requires the use of Chrome**
 
 1. Open this repository using **GitHub Codespaces**. A dialogue will say "This folder contains a workspace file ... <snip> ... Do you want to open it?" Click "Open Workspace".  You may receive a warning from the Git extension of too many active changes in the codeql submodule; you can ignore this warning, especially since you won't turn in this git repository.  Remember to commit changes to files you do care about before closing a codespace.
-2. Inside the codespace environment, open the QL Tab on the sidebar and click **"Add a CodeQL database From an archive"**.
-3. In this homework, we will analyze the following two projects:
+2. Inside the codespace environment, open the QL Tab on the sidebar of Visual Studio Code and click **"Add a CodeQL database From GitHub"**. In this homework, we will analyze the following two projects:
    https://github.com/CMU-program-analysis/s2-hw1 and
-   https://github.com/CMU-program-analysis/mypy-hw1. We created the CodeQL databases for these projects and included them as zip archives in this repository.
-   **You must import these two archives before writing/testing your queries**. 
-4. In the QL Tab, set *s2-hw1* as the default database to answer the questions for the Java analysis and *mypy-hw1* for the Python analysis.
+   https://github.com/CMU-program-analysis/mypy-hw1. 
+   **You must import these two databases before writing/testing your queries**. 
+3. In the QL Tab, set *s2-hw1* as the default database to answer the questions for the Java analysis and *mypy-hw1* for the Python analysis.
 
 **Alternative 2 (Locally)**
 1. Download [Visual Studio Code](https://code.visualstudio.com) 
 2. Install [CodeQL Extension](https://marketplace.visualstudio.com/items?itemName=github.vscode-codeql) for Visual Studio Code
 3. Clone this repository. Make sure to include all submodules (`git clone https://github.com/CMU-program-analysis-fa25/homework-1 --recursive`)
-4. In VS Code, click File > Open Workspace. Select the file `hw1.code-workspace` in your checkout of this repository.
-5. Open the QL Tab on the sidebar of Visual Studio Code and click **"Add a CodeQL database From an archive"**.
-6. In this homework, we will analyze the following two projects:
+4. Open the QL Tab on the sidebar of Visual Studio Code and click **"Add a CodeQL database From GitHub"**. In this homework, we will analyze the following two projects:
    https://github.com/CMU-program-analysis/s2-hw1 and
    https://github.com/CMU-program-analysis/mypy-hw1. We created the CodeQL databases for these projects and included them as zip archives in this repository.
-   **You must import these two archives before writing/testing your queries**. 
-7. In the QL Tab, set *s2-hw1* as the default database to answer the questions for the Java analysis and *mypy-hw1* for the Python analysis.
+   **You must import these two databases before writing/testing your queries**. 
+5. In the QL Tab, set *s2-hw1* as the default database to answer the questions for the Java analysis and *mypy-hw1* for the Python analysis.
 
 ---
 
