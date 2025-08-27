@@ -6,7 +6,7 @@ Homework 1: Syntactic Analysis With CodeQL (Repo CMU-program-analysis-fa25/homew
 - Implement simple analyses with CodeQL queries.
 
 ### Handin Instructions:
-Submit via the Gradescope online assignment for Homework 1: <TODO: create assignment> 
+Submit via the Gradescope online assignment for Homework 1: https://www.gradescope.com/courses/1103580/assignments/6615180/
 
 ### Grading:
 This homework is worth 100 points (with a possible 30 bonus points). The point
