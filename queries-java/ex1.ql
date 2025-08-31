@@ -7,14 +7,14 @@ from BinaryExpr expr, CompileTimeConstantExpr const
 // --------------------
 where
     // Constrain "expr" to shift operands (5 points)
-    (expr instanceof ...) and
+    (expr instanceof LeftShiftExpr or expr instanceof RightShiftExpr or expr instanceof UnsignedRightShiftExpr) and
 
     // Constrain "const" to be the right operand of "expr" (5 points)
     // Note that "=" is the comparison operator
-    ... and
+    (expr.getRightOperand() = const) and
 
     // Constrain the value of "const" to be negative or greater than 31 (5 points)
-    (... or ...)
+    (const.getIntValue() < 0 or const.getIntValue() > 31)
 
     // Running this query after implementing the three above constraints should
     // give you 19 results, however not all of these are errors because longs
