@@ -12,8 +12,9 @@ predicate function_has_parameter(Function f, LocalVariable v) {
 // and has a default value of None. (15 points)
 predicate parameter_default_none(Function f, LocalVariable v) {
   function_has_parameter(f, v) and
-  exists(Parameter p |
-    ...
+  exists(Parameter p, None n |
+    p = f.getArgByName(v.getId()) and
+    p.getDefault() = n
   )
 }
 
@@ -29,7 +30,24 @@ predicate parameter_default_none(Function f, LocalVariable v) {
 //   (15 points).
 // - Return the statement (10 points).
 Stmt assigned_self_or_default(Function f, LocalVariable v) {
-  ...
+  function_has_parameter(f, v) and
+  exists(Stmt stmt, AssignStmt assign, BoolExpr bool | 
+    // Check assignment statement in function
+    f.contains(stmt) and stmt.(AssignStmt) = assign 
+    and 
+    // Check if v is the one got assigned
+    exists(Name assignee |  
+      assign.getATarget() = assignee and assignee.getId() = v.getId()
+    )
+    and
+    // Check or expression
+    assign.getValue() = bool and bool.getOp() instanceof Or
+    and
+    // Check if the first operand is the variable ifself
+    bool.getValue(0).toString() = v.getId()
+    // Return result
+    and result = stmt
+  )  
 }
 
 // --------------------
